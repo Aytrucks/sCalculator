@@ -1,6 +1,7 @@
-*{
+/* *{
     border: solid red 1px;
-}
+    border-radius: 10px;
+} */
 
 body{
     display: flex;
@@ -9,29 +10,48 @@ body{
     align-items:start;
     justify-content: center;
     flex-direction: column;
+    background-color: rgb(38, 62, 68);
+    
 }
 
 .calculator{
-    border-radius: 10px;
+    
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     align-self: center;
     justify-content: space-between;
-    width: 500px;
+    width: 600px;
     height: 600px;
 }
 
 #screen{
+    background-color: rgb(204, 161, 142);
+    border: solid rgb(68, 57, 56) 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 100px;
+    width: 580px;
+    height: 150px;
 }
 
-.functions{
-    width: 200px;
+.numpad{
+    display: flex;
+    width: 300px;
+    height: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.numBtn{
+    background-color: rgb(236, 180, 111);
+    display: flex;
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+}
+
+.operation{
+    width: 300px;
     height: 200px;
     display: flex;
     
@@ -40,9 +60,11 @@ body{
 }
 
 .funcBtn{
+    background-color: rgb(236, 180, 111);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    
 }
+
