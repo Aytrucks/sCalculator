@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta name="author" content="Anish Nalla">
         <link rel="stylesheet" href="style.css">
-        <script src="calc.js"></script>
+        <script src="calc.js" defer></script>
         <title>Calculator</title>
     </head>
     <body>
@@ -11,28 +11,30 @@
         <div class="calculator">
             <div id="screen">CALCME
             </div>
-            <div class="numpad">
-                <button class="numBtn">1</button>
-                <button class="numBtn">2</button>
-                <button class="numBtn">3</button>
-                <button class="numBtn">4</button>
-                <button class="numBtn">5</button>
-                <button class="numBtn">6</button>
-                <button class="numBtn">7</button>
-                <button class="numBtn">8</button>
-                <button class="numBtn">9</button>
-                <button class="numBtn">0</button>
+            <div class="middlerow">
+                <div id="npad" class="numpad">
+                    <button class="numBtn">1</button>
+                    <button class="numBtn">2</button>
+                    <button class="numBtn">3</button>
+                    <button class="numBtn">4</button>
+                    <button class="numBtn">5</button>
+                    <button class="numBtn">6</button>
+                    <button class="numBtn">7</button>
+                    <button class="numBtn">8</button>
+                    <button class="numBtn">9</button>
+                    <button class="numBtn">0</button>
+                </div>
+                <div class="functions">
+                    <button id="equals" class="funcBtn">=</button>
+                    <button  class="funcBtn">AC</button>
+                </div>
+                <div class="operation">
+                    <button id="plus" class="opBtn">+</button>
+                    <button id="minus" class="opBtn">-</button>
+                    <button id="mult" class="opBtn">*</button>
+                    <button id="divide" class="opBtn">&divide</button>
+                </div>
             </div>
-            <div class="operation">
-                <button id="plus" class="funcBtn">+</button>
-                <button id="minus" class="funcBtn">-</button>
-                <button id="mult" class="funcBtn">*</button>
-                <button id="divide" class="funcBtn">&divide</button>
-            </div>
-            <div class="">
-
-            </div>
-            
         </div>
     </body>
 </html>
