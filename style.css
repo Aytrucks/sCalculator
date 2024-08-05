@@ -11,28 +11,37 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color: rgb(38, 62, 68);
-    
+    font-family: monospace;
+}
+
+button{
+    font-family: monospace;
+    font-size: 40px;
 }
 
 .calculator{
     
-    background-color: antiquewhite;
+    background-color: rgb(68, 57, 56);
+    border: rgb(48, 45, 45) 5px solid;
     display: flex;
     flex-direction: column;
     align-self: center;
     justify-content: space-between;
     width: 600px;
     height: 600px;
+    
 }
 
 #screen{
     background-color: rgb(204, 161, 142);
     border: solid rgb(68, 57, 56) 10px;
+    
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    font-size: 78px;
     width: 580px;
-    height: 150px;
+    height: 100px;
 }
 
 .numpad{
@@ -43,11 +52,12 @@ body{
     justify-content: center;
 }
 .numBtn{
-    background-color: rgb(236, 180, 111);
+    background-color: rgb(43, 105, 61);
     display: flex;
     width: 90px;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .operation{
@@ -57,10 +67,12 @@ body{
     
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 10px;
 }
 
 .funcBtn{
-    background-color: rgb(236, 180, 111);
+    background-color: rgb(105, 49, 49);
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
