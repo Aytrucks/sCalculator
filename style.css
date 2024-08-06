@@ -47,10 +47,12 @@ button{
     
     display: flex;
     justify-content: flex-end;
+    align-self: center;
     align-items: center;
     font-size: 78px;
-    width: 580px;
+    width: 570px;
     height: 100px;
+    padding-right: 10px;
 }
 
 .numpad{
