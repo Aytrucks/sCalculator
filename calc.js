@@ -26,14 +26,19 @@ console.log(screen);
 numpad.addEventListener('click',(event) =>{
     if(event.target.textContent.length === 1){
         if(screen.textContent === "NaN"){
-            screen.textContent = "";
+            screen.textContent = "0";
         }
         console.log(event.target.textContent);
         if(event.target.textContent === "." && screen.textContent.includes(".")){
             console.log("Duplicate .");
         }
         else if(screen.textContent === "0"){
-            screen.textContent = event.target.textContent;
+            if(event.target.textContent === "."){
+                screen.textContent += event.target.textContent;
+            }
+            else{
+                screen.textContent = event.target.textContent;
+            }
         }
         else{
             screen.textContent += event.target.textContent;
