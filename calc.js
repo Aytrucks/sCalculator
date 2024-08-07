@@ -48,3 +48,17 @@ numpad.addEventListener('click',(event) =>{
         }
     }
 })
+
+functions.addEventListener('click',(event) =>{
+    switch(event.target.id){
+        case "=":
+            console.log("=");
+            break;
+        case "AC":
+            console.log("ac");
+            break;
+    }
+});
+
+
+
