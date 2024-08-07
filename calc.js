@@ -30,6 +30,10 @@ let screen = document.querySelector(".calculator #screen");
 console.log(screen);
 
 numpad.addEventListener('click',(event) =>{
+    if(opClick){
+        screen.textContent = "0";
+        opClick = false;
+    }
     
     if(event.target.textContent.length === 1){
         if(screen.textContent === "NaN"){
@@ -60,17 +64,36 @@ operations.addEventListener('click',(event) =>{
     switch(event.target.id){
         case "plus":
             console.log("plus");
-            num1 = screen.textContent;
+            (n1n2) ? num2 = screen.textContent : num1 = screen.textContent;
+            n1n2 = !n1n2;
             console.log(num1);
+            console.log(num2);
+            
+            opClick = true;
             break;
         case "minus":
             console.log("minus");
+            (n1n2) ? num2 = screen.textContent : num1 = screen.textContent;
+            n1n2 = !n1n2;
+            console.log(num1);
+            console.log(num2);
+            opClick = true;
             break;
         case "mult":
             console.log("mult");
+            (n1n2) ? num2 = screen.textContent : num1 = screen.textContent;
+            n1n2 = !n1n2;
+            console.log(num1);
+            console.log(num2);
+            opClick = true;
             break;
         case "divide":
             console.log("divide");
+            (n1n2) ? num2 = screen.textContent : num1 = screen.textContent;
+            n1n2 = !n1n2;
+            console.log(num1);
+            console.log(num2);
+            opClick = true;
             break;
     }
 });
@@ -79,10 +102,15 @@ functions.addEventListener('click',(event) =>{
     switch(event.target.id){
         case "=":
             console.log("=");
+            (n1n2) ? num2 = screen.textContent : num1 = screen.textContent;
+            console.log( Number(num1) + Number(num2));
+            screen.textContent = Number(num1) + Number(num2);
             break;
         case "AC":
             console.log("ac");
             screen.textContent = "0";
+            opClick = false;
+
             break;
     }
 });
